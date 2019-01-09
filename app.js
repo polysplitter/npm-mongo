@@ -25,7 +25,7 @@ const fruit = new Fruit({
   review: "Pretty solid as a fruit"
 })
 
-fruit.save()
+//fruit.save()
 
 const personSchema = new mongoose.Schema ({
   name: String,
@@ -77,3 +77,19 @@ Fruit.find((err, fruits) => {
     })
   }
 })
+
+// Fruit.updateOne({ _id: '5c33e93b9c90130a710b0b81' }, { name: 'NewBanana' }, (err) => {
+//   if (err) {
+//     console.log(err)
+//   } else {
+//     console.log('success')
+//   }
+// })
+
+// Fruit.deleteOne({ name: 'NewBanana'}, (err) => {
+//   if(err) {
+//     console.log(err)
+//   } else {
+//     console.log('deleted')
+//   }
+// })
